@@ -1,6 +1,8 @@
-import { useState } from "react";
-
-const Register = () => {
+import { useState, useContext } from "react";
+import ModelContext from "../context/ModelContext";
+import { OPEN_MODEL } from "../context/types/ModelTypes";
+const Register = (props) => {
+  const {dispatch} = useContext(ModelContext)
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -63,7 +65,7 @@ const Register = () => {
         <button type="submit" className="btn btn-lg btn-dark" value="Register">
           Register
         </button>
-        <span> Already have an account?</span>
+        <span onClick={() => dispatch({type: OPEN_MODEL, payload:props.currentModel })}> Already have an account?</span>
       </div>
     </form>
   );

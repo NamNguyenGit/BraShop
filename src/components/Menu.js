@@ -1,10 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import ModelContext from "../context/ModelContext";
 import { Link } from "react-router-dom";
 import { OPEN_MODEL } from "../context/types/ModelTypes";
+import Model from "../components/Model";
+import Register from "../auth/Register";
+import Login from "../auth/Login";
 const Menu = () => {
   const { dispatch } = useContext(ModelContext);
-
+  const [registerMode] = useState("registerModel");
+  const [loginMode] = useState("registerLogin");
   return (
     <div className="menu">
       <div className="menu__contents">
@@ -21,17 +25,15 @@ const Menu = () => {
           <Link to="/shop">Contact</Link>
         </li>
         <li>
-          <a 
-            onClick={() =>
-              dispatch({
-                type: OPEN_MODEL,
-              })
-            }
-          >
-            Sign In
-          </a>
+          <a onClick={() => dispatch({ type: OPEN_MODEL, payload: registerMode })}>Sign In</a>
         </li>
       </div>
+      <Model current={registerMode}>
+        <Register currentModel = {loginMode} />
+      </Model>
+      <Model current={loginMode}>
+        <Login currentModel = {registerMode}/>
+      </Model>
     </div>
   );
 };

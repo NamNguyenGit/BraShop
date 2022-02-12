@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
+import ModelContext from "../context/ModelContext";
+import { OPEN_MODEL } from "../context/types/ModelTypes";
 
 
-const Login = () => {
+const Login = (props) => {
+  const {dispatch} = useContext(ModelContext);
     const [state , setState] = useState({
         email:'',
         password:''
@@ -21,7 +24,7 @@ const Login = () => {
         <input
           type="email"
           className="group__control"
-          placeholder="Your email eg. Nam@gmail.com"
+          placeholder="Enter your email"
           name=""
           onChange={(e) => {
             setState({
@@ -49,7 +52,7 @@ const Login = () => {
         <button type="submit" className="btn btn-lg btn-dark" value="Login">
           Login
         </button>
-        <span> Create new account?</span>
+        <span onClick={() => dispatch({type: OPEN_MODEL, payload: props.currentModel})}> Create new account?</span>
       </div>
     </form>
      );
