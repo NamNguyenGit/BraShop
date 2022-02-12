@@ -6,6 +6,7 @@ import BestProducts from "../../data/BestProducts";
 const BestProductsProvider = (props) => {
   const [BestProductsData, dispatch] = useReducer(BestProductsReducer, {
     bestProducts: BestProducts,
+    details: {},
   });
 
   return (

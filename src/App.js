@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
 import NotFound from "./pages/NotFound";
+import Details from "./pages/Details";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
               <Route path="/shop" exact component={Shop} />
+              <Route path="/details/:id" exact component={Details} />
               <Route component={NotFound} exact />
             </Switch>
           </HelmetProvider>
