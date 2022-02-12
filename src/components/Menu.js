@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import ModelContext from "../context/ModelContext";
 import { Link } from "react-router-dom";
+import { OPEN_MODEL } from "../context/types/ModelTypes";
 const Menu = () => {
-
-  const {  dispatch} = useContext(ModelContext);
-  
+  const { dispatch } = useContext(ModelContext);
 
   return (
     <div className="menu">
@@ -22,9 +21,15 @@ const Menu = () => {
           <Link to="/shop">Contact</Link>
         </li>
         <li>
-          <a onClick={() => dispatch({
-            type: 'OPEN_MODEL'
-          })} >Sign In</a>
+          <a 
+            onClick={() =>
+              dispatch({
+                type: OPEN_MODEL,
+              })
+            }
+          >
+            Sign In
+          </a>
         </li>
       </div>
     </div>

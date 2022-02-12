@@ -7,8 +7,6 @@ const Header = () => {
     logo: "/assets/image/logo/logo.png",
   });
 
-  
-  
   return (
     <div className="header">
       <div className="container pr">
@@ -17,10 +15,8 @@ const Header = () => {
             className="header__logo__details"
             src={state.logo}
             alt="Logo Shop"
-            
           />
           <div className="header__menu">
-            {" "}
             <Menu />
           </div>
         </div>

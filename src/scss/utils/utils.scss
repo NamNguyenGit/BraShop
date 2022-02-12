@@ -1,3 +1,4 @@
+@use "../abstracts" as *;
 
 .container {
     max-width: 1200px;
@@ -5,12 +6,27 @@
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-
-   
 }
 
 .pr {
     position: relative;
 }
 
+.group {
+    margin-bottom: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    &__control {
+        @include control(5rem, 1rem, 1rem, $black);
+    }
+    span {
+        font-size: 1.5rem;
 
+        cursor: pointer;
+    }
+}
+
+::placeholder {
+    color: $black;
+    font-size: 1.6rem;
+}

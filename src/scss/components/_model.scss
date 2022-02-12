@@ -13,4 +13,12 @@
         font-size: 1.4rem;
         @include animation(modelAnimate, .5s, linear ,-10rem , 0);
     }
+    &__heading {
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+
+    }
 }

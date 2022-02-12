@@ -1,9 +1,10 @@
 import { useContext } from "react";
+import Login from "../auth/Login";
 import Register from "../auth/Register";
 import ModelContext from "../context/ModelContext";
 import { CLOSE_MODEL } from "../context/types/ModelTypes";
 
-const Model = () => {
+const Model = (props) => {
   const { state, dispatch } = useContext(ModelContext);
 
   const close = (e) => {
@@ -15,7 +16,7 @@ const Model = () => {
   return state.modelStatus ? (
     <div className="model" onClick={close}>
       <div className="model__body">
-        <Register />
+        {props.children}
       </div>
     </div>
   ) : (

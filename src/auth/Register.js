@@ -7,13 +7,13 @@ const Register = () => {
     password: "",
   });
 
-  const Sendregister = (e) => {
+  const SendRegister = (e) => {
     e.preventDefault();
     console.log(state);
   };
 
   return (
-    <form onSubmit={Sendregister}>
+    <form onSubmit={SendRegister}>
       <div className="model__heading">
         <h3>Create new account</h3>
       </div>
@@ -60,7 +60,7 @@ const Register = () => {
         />
       </div>
       <div className="group">
-        <button type="submit" className="btn btn-primary" value="Register">
+        <button type="submit" className="btn btn-lg btn-dark" value="Register">
           Register
         </button>
         <span> Already have an account?</span>
