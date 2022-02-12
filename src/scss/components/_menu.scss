@@ -1,0 +1,20 @@
+@use "../abstracts" as * ;
+
+.menu {
+    width: 100%;
+    &__contents {
+        display: flex;
+        width: 100%;
+        li {
+
+            list-style: none;
+            a {
+                font-size: 2rem ;
+                color: $orange;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 1rem 1rem;
+            }
+        }
+    }
+}
