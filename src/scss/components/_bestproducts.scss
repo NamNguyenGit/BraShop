@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.bestProducts {
+    margin: 8rem 0;
+
+    &__heading {
+        font-size: 5rem;
+        font-weight: 600;
+        position: relative;
+        width: 60%;
+        color: $orange;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: $black;
+            width: 50%;
+            height: 0.3rem;
+            left: 0;
+            bottom: -.5rem;
+        }
+    }
+}

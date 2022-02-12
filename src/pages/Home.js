@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import Header from "../components/Header";
 
+
+import Header from "../components/Header";
+import BestProducts from "../components/Products/BestProducts";
 const Home = () => {
   return (
     <>
@@ -13,6 +15,9 @@ const Home = () => {
         <meta name="keywords" content="bra , shop bra" />
       </Helmet>
       <Header />
+      <BestProducts />
+      
+      
     </>
   );
 };
