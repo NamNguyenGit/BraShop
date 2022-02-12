@@ -1,5 +1,11 @@
+import { useContext } from "react";
+import ModelContext from "../context/ModelContext";
 import { Link } from "react-router-dom";
 const Menu = () => {
+
+  const {  dispatch} = useContext(ModelContext);
+  
+
   return (
     <div className="menu">
       <div className="menu__contents">
@@ -16,7 +22,9 @@ const Menu = () => {
           <Link to="/shop">Contact</Link>
         </li>
         <li>
-          <Link to="/shop">Sign In</Link>
+          <a onClick={() => dispatch({
+            type: 'OPEN_MODEL'
+          })} >Sign In</a>
         </li>
       </div>
     </div>

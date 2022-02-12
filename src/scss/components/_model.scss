@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.model {
+    @include position(fixed, 0, 0, 0, 0, 100%, 100%);
+    @include align(flex, center, center, null);
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.4);
+    &__body {
+        background: $white;
+        width: 40rem;
+        height: auto;
+        padding: 2rem;
+        font-size: 1.4rem;
+        @include animation(modelAnimate, .5s, linear ,-10rem , 0);
+    }
+}

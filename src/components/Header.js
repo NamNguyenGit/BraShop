@@ -6,6 +6,8 @@ const Header = () => {
     video: "/assets/video/header.mp4",
     logo: "/assets/image/logo/logo.png",
   });
+
+  
   
   return (
     <div className="header">

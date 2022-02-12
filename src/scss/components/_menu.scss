@@ -6,15 +6,16 @@
         display: flex;
         width: 100%;
         li {
-
             list-style: none;
-            a {
+            a  {
                 font-size: 2rem ;
-                color: $orange;
+                color: $orange !important;
                 font-weight: 700;
                 text-decoration: none;
                 padding: 1rem 1rem;
+                cursor: pointer;
             }
+            
         }
     }
 }

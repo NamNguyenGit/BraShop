@@ -7,3 +7,24 @@
     width: $width;
     height: $height;
 }
+
+@mixin align($flex, $justify-content, $align-items, $height) {
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    height: $height;
+}
+
+@mixin animation($name, $duration, $timeFunction, $tranlate1, $tranlate2) {
+    animation: $name $duration $timeFunction;
+    @keyframes #{$name} {
+        0% {
+            opacity: 0;
+            transform: translateY($tranlate1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY($tranlate2);
+        }
+    }
+}
