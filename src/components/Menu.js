@@ -24,15 +24,19 @@ const Menu = () => {
         <li>
           <Link to="/shop">Contact</Link>
         </li>
-        <li>
-          <a onClick={() => dispatch({ type: OPEN_MODEL, payload: registerMode })}>Sign In</a>
-        </li>
+
+        <div
+          onClick={() => dispatch({ type: OPEN_MODEL, payload: registerMode })}
+          className="button-black"
+        >
+          Sign In
+        </div>
       </div>
       <Model current={registerMode}>
-        <Register currentModel = {loginMode} />
+        <Register currentModel={loginMode} />
       </Model>
       <Model current={loginMode}>
-        <Login currentModel = {registerMode}/>
+        <Login currentModel={registerMode} />
       </Model>
     </div>
   );

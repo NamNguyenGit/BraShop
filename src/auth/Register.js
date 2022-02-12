@@ -62,7 +62,7 @@ const Register = (props) => {
         />
       </div>
       <div className="group">
-        <button type="submit" className="btn btn-lg btn-dark" value="Register">
+        <button type="submit" className="button-dark" value="Register">
           Register
         </button>
         <span onClick={() => dispatch({type: OPEN_MODEL, payload:props.currentModel })}> Already have an account?</span>

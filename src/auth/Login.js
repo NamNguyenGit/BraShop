@@ -49,7 +49,7 @@ const Login = (props) => {
         />
       </div>
       <div className="group">
-        <button type="submit" className="btn btn-lg btn-dark" value="Login">
+        <button type="submit" className="button-dark" value="Login">
           Login
         </button>
         <span onClick={() => dispatch({type: OPEN_MODEL, payload: props.currentModel})}> Create new account?</span>

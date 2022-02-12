@@ -1,4 +1,4 @@
-@use "../abstracts" as * ;
+@use "../abstracts" as *;
 
 .menu {
     width: 100%;
@@ -7,15 +7,34 @@
         width: 100%;
         li {
             list-style: none;
-            a  {
-                font-size: 2rem ;
+            a {
+                font-size: 2rem;
                 color: $orange !important;
                 font-weight: 700;
                 text-decoration: none;
-                padding: 1rem 1rem;
+                padding: 1rem 2rem;
                 cursor: pointer;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 70%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 1.3rem;
+                    top: 3.5rem;
+                    background-color: $orange;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-in;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
             }
-            
         }
     }
 }
