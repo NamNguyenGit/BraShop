@@ -16,12 +16,12 @@
     margin-bottom: 1.3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &__control {
         @include control(5rem, 1rem, 1rem, $black);
     }
     span {
         font-size: 1.5rem;
-
         cursor: pointer;
     }
 }

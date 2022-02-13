@@ -3,6 +3,7 @@
 .button-dark {
     @include button($blackDark, $blackDark, $white, 4.5rem, 1.4rem, 0.4rem, 0, 0.2rem);
     letter-spacing: 0.1rem;
+    width: 25%;
 }
 
 .button-black {
