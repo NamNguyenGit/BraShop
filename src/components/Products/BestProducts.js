@@ -9,7 +9,7 @@ const BestProducts = () => {
     BestProductsData: { bestProducts },
   } = useContext(BestProductsContext);
   
-
+  
   return (
     <div className="bestProducts">
       <div className="container">
@@ -21,7 +21,7 @@ const BestProducts = () => {
         <div className="bestProducts__blocks">
           <div className="row">
             {bestProducts.map((bestProduct) => (
-              <BestProductsList product={bestProduct} key={bestProduct.id} />
+              <BestProductsList product={bestProduct}  key={bestProduct.id} />
             ))}
           </div>
         </div>

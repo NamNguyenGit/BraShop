@@ -36,7 +36,7 @@ const Menu = () => {
           <Link to="/shop">Contact</Link>
         </li>
         <li>
-          <Link onClick={() => dispatch({ type: OPEN_MODEL, payload: registerMode })}> Sign In </Link>
+          <Link  to={{}} onClick={() => dispatch({ type: OPEN_MODEL, payload: registerMode })}> Sign In </Link>
         </li>
       </div>
       <Model current={registerMode}>

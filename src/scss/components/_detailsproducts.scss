@@ -27,7 +27,7 @@
     &__right {
         margin-top: 5rem;
         &__block {
-            padding: 15rem 5rem;
+            padding: 15rem 15rem;
             &__name {
                 color: $black ;
                 font-size: 5rem;
@@ -39,6 +39,23 @@
                 font-weight: 600;
                 text-transform: capitalize;
                 color: $silverMedium;
+            }
+            &__cart {
+                margin-top: 10rem;
+                display: flex;
+                align-items: center;
+                font-size: 1.7rem;
+                font-weight: 400;
+                justify-content: space-around;
+                border: 1px solid $black;
+                height: 5.5rem;
+                color: $black;
+                background: $white;
+                transition: all 0.5s linear;
+                &:hover {
+                    color: $white;
+                background: $black;
+                }
             }
         }
     }
