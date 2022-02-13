@@ -5,7 +5,7 @@ const BestProducts = [
     image: "/assets/image/product/1.jpg",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "The long bust with stability on the back plus embroideries on the bodice and bust maintain a soft",
     banner: "/assets/image/banner/banner1.png",
   },
   {
@@ -14,7 +14,7 @@ const BestProducts = [
     image: "/assets/image/product/2.JPG",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "Soft stretch lace with Moroccan floral print on the side and back with scalloped lace on the lower back support.",
     banner: "/assets/image/banner/banner3.png",
   },
   {
@@ -23,7 +23,7 @@ const BestProducts = [
     image: "/assets/image/product/3.jpg",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "The back straps are floral lace for a distinctive high-cut look that accentuates the U-shape for increased coverage and stability.",
     banner: "/assets/image/banner/banner4.jpg",
   },
   {
@@ -32,7 +32,7 @@ const BestProducts = [
     image: "/assets/image/product/4.JPG",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "Use a French cup with removable foam padding and extra coverage on the front.",
     banner: "/assets/image/banner/banner2.jpg",
   },
   {
@@ -41,7 +41,7 @@ const BestProducts = [
     image: "/assets/image/product/5.JPG",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "Morocco leaves inspire leaf embroidery and delicate lace and see-through mesh with unique embossed ornamentation.",
     banner: "/assets/image/banner/banner6.jpg",
   },
   {
@@ -50,7 +50,7 @@ const BestProducts = [
     image: "/assets/image/product/6.jpg",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "Combined with 2 layers of soft fabric to help keep the shirt from moving and provide better lift support, easy to wear and good stretch.",
     banner: "/assets/image/banner/banner8.webp",
   },
   {
@@ -59,7 +59,7 @@ const BestProducts = [
     image: "/assets/image/product/7.JPG",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "The wide shoulder straps relieve pressure on the shoulders, and the non-removable shoulder straps help lift the bust and keep the shirt in place.",
     banner: "/assets/image/banner/banner5.png",
   },
   {
@@ -68,7 +68,7 @@ const BestProducts = [
     image: "/assets/image/product/8.JPG",
     price: 300,
     sale_price: 200,
-    description: "Description something about product",
+    description: "The long bust layer with stability on the back plus embroidered details on the bust and bust maintain a soft feminine look.",
     banner: "/assets/image/banner/banner7.jpg",
   },
 ];

@@ -7,11 +7,13 @@ import About from "./pages/About";
 import Shop from "./pages/Shop";
 import NotFound from "./pages/NotFound";
 import Details from "./pages/Details";
+import Menu from "./components/Menu";
 function App() {
   return (
     <Router>
       <ModelProvider>
         <BestProductsProvider>
+          <Menu />
           <HelmetProvider>
             <Switch>
               <Route path="/" exact component={Home} />

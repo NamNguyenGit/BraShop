@@ -1,8 +1,17 @@
 @use "../abstracts" as *;
 
 .menu {
-    width: 100%;
+    @include position(fixed, 1rem,20%, null, null,null,null);
+    z-index: 1;
+    
     &__contents {
+        align-items: center;
+        &__logo {
+            &__details {
+                width: 35%;
+            }
+           
+        }
         display: flex;
         width: 100%;
         li {
@@ -16,21 +25,13 @@
                 cursor: pointer;
                 position: relative;
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 70%;
-                    transform: scaleX(0);
-                    height: 2px;
-                    bottom: 0;
-                    left: 1.3rem;
-                    top: 3.5rem;
-                    background-color: $orange;
-                    transform-origin: bottom right;
-                    transition: transform 0.25s ease-in;
+                &:hover {
+                    background: $black;
+                    color: $white !important;
+                    transition: all 0.5s linear;
+                    
                 }
-
-                
+ 
             }
         }
     }

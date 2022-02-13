@@ -8,7 +8,7 @@ const BestProducts = () => {
   const {
     BestProductsData: { bestProducts },
   } = useContext(BestProductsContext);
-  console.log(bestProducts);
+  
 
   return (
     <div className="bestProducts">

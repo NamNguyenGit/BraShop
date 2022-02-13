@@ -8,6 +8,28 @@
     padding-right: 1.5rem;
 }
 
+.heading {
+    margin-bottom: 5rem;
+    font-size: 4.5rem;
+    color: $orange;
+    position: relative;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    transform: rotate(-2deg);
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: $black;
+        width: 10%;
+        height: 0.3rem;
+        left: 0;
+        bottom: -0.5rem;
+    }
+}
+
 .pr {
     position: relative;
 }

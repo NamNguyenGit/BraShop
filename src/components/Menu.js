@@ -1,17 +1,28 @@
 import { useContext, useState } from "react";
 import ModelContext from "../context/ModelContext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { OPEN_MODEL } from "../context/types/ModelTypes";
 import Model from "../components/Model";
 import Register from "../auth/Register";
 import Login from "../auth/Login";
 const Menu = () => {
+  const [state] = useState({
+    logo: "/assets/image/logo/logo.png",
+  })
   const { dispatch } = useContext(ModelContext);
   const [registerMode] = useState("registerModel");
   const [loginMode] = useState("registerLogin");
   return (
     <div className="menu">
       <div className="menu__contents">
+        <div className="menu__contents__logo">
+        <LazyLoadImage
+            className="menu__contents__logo__details"
+            src={state.logo}
+            alt="Logo Shop"
+          />
+        </div>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -24,13 +35,9 @@ const Menu = () => {
         <li>
           <Link to="/shop">Contact</Link>
         </li>
-
-        <div
-          onClick={() => dispatch({ type: OPEN_MODEL, payload: registerMode })}
-          className="button-black"
-        >
-          Sign In
-        </div>
+        <li>
+          <Link onClick={() => dispatch({ type: OPEN_MODEL, payload: registerMode })}> Sign In </Link>
+        </li>
       </div>
       <Model current={registerMode}>
         <Register currentModel={loginMode} />
