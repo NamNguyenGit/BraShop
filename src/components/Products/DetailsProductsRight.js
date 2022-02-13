@@ -1,4 +1,5 @@
 import { BsFillCartPlusFill } from "react-icons/bs";
+import Colors from "../Colors/Colors";
 const DetailsProductsRight = ({ product }) => {
   return (
     <div className="detailsInfo__right__block">
@@ -6,7 +7,7 @@ const DetailsProductsRight = ({ product }) => {
       <div className="detailsInfo__right__block__category">
         {product.category}
       </div>
-      <div className="detailsInfo__right__block__color">color</div>
+      <div className="detailsInfo__right__block__color"><Colors /></div>
       <div className="detailsInfo__right__block__size">size</div>
       <div className="detailsInfo__right__block__cart">
         <BsFillCartPlusFill size={30} />

@@ -9,7 +9,6 @@ const BestProducts = () => {
     BestProductsData: { bestProducts },
   } = useContext(BestProductsContext);
   
-  
   return (
     <div className="bestProducts">
       <div className="container">
