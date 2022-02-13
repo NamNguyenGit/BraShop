@@ -1,4 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import DetailsProductsRight from "./DetailsProductsRight";
 
 const DetailsProducts = ({ product }) => {
   return (
@@ -21,7 +22,11 @@ const DetailsProducts = ({ product }) => {
                     <LazyLoadImage src={product.image} alt={product.image} />
                   </div>
                 </div>
-                <div className="col-md-6"></div>
+                <div className="col-md-6">
+                    <div className="detailsInfo__right">
+                        <DetailsProductsRight product={product} />
+                    </div>
+                </div>
               </div>
             </div>
          
