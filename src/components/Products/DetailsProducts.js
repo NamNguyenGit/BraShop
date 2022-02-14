@@ -12,6 +12,7 @@ const DetailsProducts = ({ product }) => {
   return (
     <>
       {lightBoxStatus ? <LightBox /> : ''}
+      
       <div className="detailsInfo">
         <div className="container">
           <h2 className="heading">Overview</h2>

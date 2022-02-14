@@ -43,25 +43,25 @@ const Countdown = () => {
     <div className="countdown__contents">
       <section>
         <p>
-          {timerDays} <small>Days</small>
+          {timerDays} 
         </p>
       </section>
       <span>:</span>
       <section>
         <p>
-          {timerHours} <small>Hours</small>
+          {timerHours} 
         </p>
       </section>
       <span>:</span>
       <section>
         <p>
-          {timerMinutes} <small>Minutes</small>
+          {timerMinutes} 
         </p>
       </section>
       <span>:</span>
       <section>
         <p>
-          {timerSeconds} <small>Seconds</small>
+          {timerSeconds} 
         </p>
       </section>
     </div>
