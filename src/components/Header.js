@@ -8,6 +8,7 @@ const Header = ({image, heading}) => {
     
   });
 
+
   return (
     <div className="header">
       <div className="container pr">
