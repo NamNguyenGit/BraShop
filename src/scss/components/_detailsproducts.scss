@@ -1,9 +1,74 @@
 @use "../abstracts" as *;
 .detailsInfo {
     margin: 15rem 0;
+    &__lightbox {
+        @include position(fixed, 0, 0, 0, 0, 100%, 100%);
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 8;
+        @include align(flex, center, center, null);
+        flex-direction: column;
+
+        h4 {
+            color: $white;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            animation: nameAnimation 0.5s linear;
+            @keyframes nameAnimation {
+                from {
+                    opacity: 0;
+                    transform: translateY(-2rem);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        &__card {
+            width: 45rem;
+            height: 45rem;
+            background: transparent;
+            border-radius: 0.5rem;
+            overflow: hidden;
+
+            animation: cardAnimation 0.5s linear;
+            @keyframes cardAnimation {
+                from {
+                    opacity: 0;
+                    transform: translateY(-2rem);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            &__image {
+                width: 45rem;
+                max-height: 45rem;
+                overflow: hidden;
+                image-rendering: pixelated;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    animation: imageAnimation 0.5s linear;
+                    @keyframes imageAnimation {
+                        from {
+                            opacity: 0;
+                            transform: scale(0);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
     &__details {
         display: flex;
-       
     }
     &__p {
         margin: 2rem 0;
@@ -31,10 +96,9 @@
         margin-top: 8rem;
         margin-left: 5rem;
         &__block {
-
             &__name {
                 color: $black;
-                font-size:4rem;
+                font-size: 4rem;
 
                 font-weight: 600;
                 text-transform: capitalize;
@@ -82,8 +146,6 @@
                 border-bottom: 1px dotted $silverLight-50;
                 cursor: pointer;
             }
-            
-            
         }
     }
 }

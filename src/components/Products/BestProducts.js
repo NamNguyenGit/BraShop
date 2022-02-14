@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import BestProductsContext from "../../context/BestProductsContext";
 import BestProductsList from "./BestProductsList";
+
 const BestProducts = () => {
   const [state] = useState({
     title: "Best Products",
@@ -10,6 +11,7 @@ const BestProducts = () => {
   } = useContext(BestProductsContext);
   
   return (
+    <>
     <div className="bestProducts">
       <div className="container">
         <div className="row">
@@ -26,6 +28,9 @@ const BestProducts = () => {
         </div>
       </div>
     </div>
+    </>
+
+    
   );
 };
 

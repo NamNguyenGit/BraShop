@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ModelProvider from "./context/providers/ModelProvider";
 import BestProductsProvider from "./context/providers/BestProductsProvider";
 import SaleProductsProvider from "./context/providers/SaleProductsProvider";
+
 import ColorsProvider from "./context/providers/ColorsProvider";
 import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";

@@ -8,6 +8,9 @@ const BestProductsProvider = (props) => {
   const [BestProductsData, dispatch] = useReducer(BestProductsReducer, {
     bestProducts: BestProducts,
     details: {},
+    lightBoxStatus: false,
+    currentLightBox: {}
+    
   });
 
   return (
