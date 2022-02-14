@@ -11,6 +11,7 @@ const Details = () => {
   const {details} = BestProductsData;
   useEffect(() => {
     dispatch({ type: DETAILS, payload: id });
+    
   }, [id]);
 
   return (

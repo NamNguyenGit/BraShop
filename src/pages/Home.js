@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 import Header from "../components/Header";
 import BestProducts from "../components/Products/BestProducts";
+import SaleProducts from "../components/Products/SaleProducts";
 const Home = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const Home = () => {
       </Helmet>
       <Header />
       <BestProducts />
-      
+      <SaleProducts />  
       
     </>
   );

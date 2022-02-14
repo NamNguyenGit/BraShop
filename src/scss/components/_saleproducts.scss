@@ -1,0 +1,28 @@
+@use "../abstracts" as *;
+
+.saleProducts {
+    margin-top: 16rem 0;
+    background: $silverlight-40;
+    padding: 13rem 0;
+    transform: skewY(-5deg);
+    &__contents {
+        transform: skewY(5deg);
+        &__heading {
+            font-size: 5rem;
+            font-weight: 500;
+            color: $orange;
+            width: 50%;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                width: 25%;
+                position: absolute;
+                content: "";
+                background: $black;
+                height: 0.3rem;
+                left: 0;
+                bottom: -0.5rem;
+            }
+        }
+    }
+}
