@@ -1,11 +1,11 @@
 import { useReducer } from "react";
 import SaleProductsReducer from "../reducers/SaleProductsReducer";
 import SaleProductsContext from "../SaleProductsContext";
-import SaleProducts from "../../data/SaleProducts";
+import BestProducts from "../../data/BestProducts";
 
 const SaleProductsProvider = (props) => {
   const [SaleProductsData, dispatch] = useReducer(SaleProductsReducer, {
-    saleProducts: SaleProducts,
+    saleProducts: BestProducts,
   });
 
   return (

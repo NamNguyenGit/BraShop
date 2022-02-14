@@ -13,23 +13,22 @@ const DetailsProducts = ({ product }) => {
         </div>
         <h2 className="heading">Details</h2>
         <div className="row">
-         
-            <div className="container">
-              <div className="row">
-                
+          <div className="container">
+            <div className="row">
+              <div className="detailsInfo__details">
                 <div className="col-md-6">
                   <div className="detailsInfo__img">
                     <LazyLoadImage src={product.image} alt={product.image} />
                   </div>
                 </div>
                 <div className="col-md-6">
-                    <div className="detailsInfo__right">
-                        <DetailsProductsRight product={product} />
-                    </div>
+                  <div className="detailsInfo__right">
+                    <DetailsProductsRight key={product.id} product={product} />
+                  </div>
                 </div>
               </div>
             </div>
-         
+          </div>
         </div>
       </div>
     </div>

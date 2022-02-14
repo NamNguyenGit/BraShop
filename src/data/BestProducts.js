@@ -8,6 +8,7 @@ const BestProducts = [
     description: "The long bust with stability on the back plus embroideries on the bodice and bust maintain a soft.",
     category: "Bra",
     size: "XXL",
+    status: "Sale",
     banner: "/assets/image/banner/banner1.png",
   },
   {
@@ -19,6 +20,7 @@ const BestProducts = [
     description: "Soft stretch lace with Moroccan floral print on the side and back with scalloped lace on the lower back support.",
     category: "Bra",
     size: "XXL",
+    status: "Sold out",
     banner: "/assets/image/banner/banner3.png",
   },
   {
@@ -30,6 +32,7 @@ const BestProducts = [
     description: "The back straps are floral lace for a distinctive high-cut look that accentuates the U-shape for increased coverage and stability.",
     category: "Bra",
     size: "XXL",
+    status: "Sold out",
     banner: "/assets/image/banner/banner4.jpg",
   },
   {
@@ -41,6 +44,7 @@ const BestProducts = [
     description: "Use a French cup with removable foam padding and extra coverage on the front.",
     category: "Bra",
     size: "XXL",
+    status: "Sale",
     banner: "/assets/image/banner/banner2.jpg",
   },
   {
@@ -52,6 +56,7 @@ const BestProducts = [
     description: "Morocco leaves inspire leaf embroidery and delicate lace and see-through mesh with unique embossed ornamentation.",
     category: "Bra",
     size: "XXL",
+    status: "Sale",
     banner: "/assets/image/banner/banner6.jpg",
   },
   {
@@ -63,6 +68,7 @@ const BestProducts = [
     description: "Combined with 2 layers of soft fabric to help keep the shirt from moving and provide better lift support, easy to wear and good stretch.",
     category: "Bra",
     size: "XXL",
+    status: "Sale",
     banner: "/assets/image/banner/banner8.webp",
   },
   {
@@ -74,6 +80,7 @@ const BestProducts = [
     description: "The wide shoulder straps relieve pressure on the shoulders, and the non-removable shoulder straps help lift the bust and keep the shirt in place.",
     category: "Bra",
     size: "XXL",
+    status: "Sale",
     banner: "/assets/image/banner/banner5.png",
   },
   {
@@ -85,6 +92,7 @@ const BestProducts = [
     description: "The long bust layer with stability on the back plus embroidered details on the bust and bust maintain a soft feminine look.",
     category: "Bra",
     size: "XXL",
+    status: "Sold out",
     banner: "/assets/image/banner/banner7.jpg",
   },
 ];

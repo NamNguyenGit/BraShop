@@ -1,14 +1,16 @@
 import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import BestProductsContext from "../context/BestProductsContext";
+
 import { DETAILS } from "../context/types/BestProductsTypes";
 import Header from "../components/Header";
 import { Helmet } from "react-helmet-async";
 import DetailsProducts from "../components/Products/DetailsProducts";
 const Details = () => {
   const { id } = useParams();
-  const { BestProductsData, dispatch } = useContext(BestProductsContext);
-  const {details} = BestProductsData;
+  const { BestProductsData , dispatch } = useContext(BestProductsContext);
+  const {details} = BestProductsData  ;
+  
   useEffect(() => {
     dispatch({ type: DETAILS, payload: id });
     

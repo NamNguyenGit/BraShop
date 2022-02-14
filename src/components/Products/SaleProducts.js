@@ -7,6 +7,7 @@ const SaleProducts = () => {
     title: "Sales",
   });
   const {SaleProductsData: {saleProducts}, } = useContext(SaleProductsContext);
+  console.log(saleProducts)
   
   return (
     <div className="saleProducts">

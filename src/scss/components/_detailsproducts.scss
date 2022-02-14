@@ -1,7 +1,10 @@
 @use "../abstracts" as *;
 .detailsInfo {
     margin: 15rem 0;
-
+    &__details {
+        display: flex;
+       
+    }
     &__p {
         margin: 2rem 0;
         font-size: 2rem;
@@ -25,9 +28,10 @@
         }
     }
     &__right {
-        margin-top: 5rem;
+        margin-top: 8rem;
+        margin-left: 5rem;
         &__block {
-            padding: 15rem 15rem;
+
             &__name {
                 color: $black;
                 font-size:4rem;
@@ -43,6 +47,7 @@
                 border-bottom: 1px dotted $silverLight-50;
             }
             &__cart {
+                width: 50%;
                 margin-top: 10rem;
                 display: flex;
                 align-items: center;
@@ -54,6 +59,7 @@
                 color: $black;
                 background: $white;
                 transition: all 0.5s linear;
+                cursor: pointer;
                 &:hover {
                     color: $white;
                     background: $black;
