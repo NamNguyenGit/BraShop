@@ -30,7 +30,7 @@
             padding: 15rem 15rem;
             &__name {
                 color: $black;
-                font-size: 5rem;
+                font-size:4rem;
 
                 font-weight: 600;
                 text-transform: capitalize;
@@ -68,14 +68,16 @@
                 margin-top: 3rem;
                 font-size: 2rem;
                 font-weight: 400;
-
-                &__details {
-                    margin-top: 3rem;
-                    font-size: 2rem;
-                    font-weight: 400;
-                    border-bottom: 1px dotted $silverLight-50;
-                }
             }
+            &__sizeDetail {
+                margin-top: 2rem;
+                font-size: 2rem;
+                font-weight: bold;
+                border-bottom: 1px dotted $silverLight-50;
+                cursor: pointer;
+            }
+            
+            
         }
     }
 }
