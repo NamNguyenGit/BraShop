@@ -1,12 +1,13 @@
 import { useState,useContext } from "react";
 import SaleProductsContext from "../../context/SaleProductsContext";
+import SaleProductsList from "./SaleProductsList";
 
 const SaleProducts = () => {
   const [state] = useState({
     title: "Sales",
   });
   const {SaleProductsData: {saleProducts}, } = useContext(SaleProductsContext);
-  console.log(saleProducts)
+  
   return (
     <div className="saleProducts">
       <div className="saleProducts__contents">
@@ -17,7 +18,11 @@ const SaleProducts = () => {
             </div>
           </div>
           <div className="saleProducts__blocks">
-            <div className="row"></div>
+            <div className="row">
+              {saleProducts.map((saleProduct) => (
+                <SaleProductsList saleProducts={saleProduct} key={saleProduct.id} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -9,6 +9,9 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner1.png",
+      status : "Sale",
+
+      
     },
     {
       id: 2,
@@ -20,6 +23,8 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner3.png",
+      status : "Sale",
+
     },
     {
       id: 3,
@@ -31,6 +36,8 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner4.jpg",
+      status : "Sold out",
+
     },
     {
       id: 4,
@@ -42,6 +49,8 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner2.jpg",
+      status : "Sale",
+
     },
     {
       id: 5,
@@ -53,6 +62,8 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner6.jpg",
+      status : "Sale",
+
     },
     {
       id: 6,
@@ -64,6 +75,8 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner8.webp",
+      status : "Sold out",
+
     },
     {
       id: 7,
@@ -75,6 +88,8 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner5.png",
+      status : "Sale",
+
     },
     {
       id: 8,
@@ -86,6 +101,8 @@ const SaleProducts = [
       category: "Bra",
       size: "XXL",
       banner: "/assets/image/banner/banner7.jpg",
+      status : "Sold out",
+
     },
   ];
   export default SaleProducts;
