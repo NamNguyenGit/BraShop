@@ -9,7 +9,9 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sale",
+    stars: 4,
     banner: "/assets/image/banner/banner1.png",
+    
   },
   {
     id: 2,
@@ -21,6 +23,7 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sold out",
+    stars: 5,
     banner: "/assets/image/banner/banner3.png",
   },
   {
@@ -33,6 +36,7 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sold out",
+    stars: 4,
     banner: "/assets/image/banner/banner4.jpg",
   },
   {
@@ -45,6 +49,7 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sale",
+    stars: 5,
     banner: "/assets/image/banner/banner2.jpg",
   },
   {
@@ -57,6 +62,7 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sale",
+    stars: 5,
     banner: "/assets/image/banner/banner6.jpg",
   },
   {
@@ -69,6 +75,7 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sale",
+    stars: 5,
     banner: "/assets/image/banner/banner8.webp",
   },
   {
@@ -81,6 +88,7 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sale",
+    stars: 5,
     banner: "/assets/image/banner/banner5.png",
   },
   {
@@ -93,6 +101,7 @@ const BestProducts = [
     category: "Bra",
     size: "XXL",
     status: "Sold out",
+    stars: 4,
     banner: "/assets/image/banner/banner7.jpg",
   },
 ];

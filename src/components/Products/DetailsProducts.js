@@ -1,15 +1,18 @@
 import DetailsProductImage from "./DetailsProductImage";
 import DetailsProductsRight from "./DetailsProductsRight";
 import { useContext } from "react";
-
 import BestProductsContext from "../../context/BestProductsContext";
 import LightBox from "./LightBox";
+
 const DetailsProducts = ({ product }) => {
   const {
     BestProductsData: {  lightBoxStatus },
   } = useContext(BestProductsContext);
   
+
+
   return (
+
     <>
       {lightBoxStatus ? <LightBox /> : ''}
       
@@ -43,6 +46,11 @@ const DetailsProducts = ({ product }) => {
           </div>
         </div>
       </div>
+      <div className="detailsInfo__reviewProduct">
+      
+      </div>
+    
+
     </>
   );
 };

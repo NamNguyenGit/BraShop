@@ -110,7 +110,11 @@
                 color: $silverMedium;
                 border-bottom: 1px dotted $silverLight-50;
             }
+            &__star {
+                margin-top: 3.5rem;
+            }
             &__cart {
+                text-transform: capitalize;
                 width: 50%;
                 margin-top: 10rem;
                 display: flex;
@@ -147,5 +151,11 @@
                 cursor: pointer;
             }
         }
+    }
+    &__relatedProduct {
+        margin-top: 16rem 0;
+        background: $silverlight-40;
+        padding: 13rem 0;
+        transform: skewY(-5deg);
     }
 }
