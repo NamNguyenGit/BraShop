@@ -3,6 +3,7 @@ import DetailsProductsRight from "./DetailsProductsRight";
 import { useContext } from "react";
 import BestProductsContext from "../../context/BestProductsContext";
 import LightBox from "./LightBox";
+import Review from "../Reviews/Review";
 
 const DetailsProducts = ({ product }) => {
   const {
@@ -46,9 +47,9 @@ const DetailsProducts = ({ product }) => {
           </div>
         </div>
       </div>
-      <div className="detailsInfo__reviewProduct">
       
-      </div>
+        <Review />
+      
     
 
     </>
