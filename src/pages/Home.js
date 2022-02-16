@@ -12,7 +12,7 @@ const Home = () => {
           name="description"
           content="Quality is remembered long after the price is forgotten"
         />
-        <meta name="keywords" content="bra , shop bra" />
+        <meta name="keywords" content="etsy , bra , shop bra" />
       </Helmet>
       <Header />
       <BestProducts />
