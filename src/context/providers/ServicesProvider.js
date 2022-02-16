@@ -4,7 +4,7 @@ import ServicesReducer from "../reducers/ServicesReducer";
 import services from "../../data/services";
 
 const ServicesProvider = (props) => {
-  const { ServiceData, dispatch } = useReducer(ServicesReducer, {
+  const [ServiceData, dispatch]   = useReducer(ServicesReducer, {
     services,
   });
 

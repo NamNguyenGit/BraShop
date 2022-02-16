@@ -4,6 +4,7 @@ import BestProductsProvider from "./context/providers/BestProductsProvider";
 import SaleProductsProvider from "./context/providers/SaleProductsProvider";
 import ReviewProvider from "./context/providers/ReviewProvider";
 import ColorsProvider from "./context/providers/ColorsProvider";
+import ServicesProvider from "./context/providers/ServicesProvider";
 import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -19,16 +20,18 @@ function App() {
           <SaleProductsProvider>
             <ReviewProvider>
               <ColorsProvider>
-                <Menu />
-                <HelmetProvider>
-                  <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/about" exact component={About} />
-                    <Route path="/shop" exact component={Shop} />
-                    <Route path="/details/:id" exact component={Details} />
-                    <Route component={NotFound} exact />
-                  </Switch>
-                </HelmetProvider>
+                <ServicesProvider>
+                  <Menu />
+                  <HelmetProvider>
+                    <Switch>
+                      <Route path="/" exact component={Home} />
+                      <Route path="/about" exact component={About} />
+                      <Route path="/shop" exact component={Shop} />
+                      <Route path="/details/:id" exact component={Details} />
+                      <Route component={NotFound} exact />
+                    </Switch>
+                  </HelmetProvider>
+                </ServicesProvider>
               </ColorsProvider>
             </ReviewProvider>
           </SaleProductsProvider>

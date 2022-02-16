@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer__container">
         <div className="container">
           <div className="footer__container__block">
-            <div class="row">
+            <div className="row">
               <div className="col-md-6">
                   <FooterIntro />
               </div>

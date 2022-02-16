@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+
+.services {
+    margin: 8rem 0;
+    background: $white;
+    padding: 13rem;
+    &__contents {
+        &__container {
+            @include align(flex, null, center, null)
+        }
+    }
+    &__left {
+        cursor: pointer;
+        margin-right: 10rem;
+        &__heading {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height:4rem;
+            background: linear-gradient(to right, #f7b42c 0%, #fc575e 74%);
+            color: transparent;
+            background-clip: text;
+            text-transform: capitalize;
+        }
+        &__paragraph {
+            margin-top: 3.6rem;
+            font-size: 2rem;
+            line-height: 2.7rem;
+            font-weight: 500;
+        }
+    }
+}
