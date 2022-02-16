@@ -1,0 +1,33 @@
+@use "../abstracts" as*;
+
+.footer {
+    margin-top: 16rem;
+    width: 100%;
+    padding: 8rem 0;
+    min-height: 60rem;
+
+    &__container {
+        width: 100%;
+
+        &__block {
+            background: $white;
+            padding: 2rem;
+        }
+    }
+    
+   
+    
+    &__bottom {
+        width: 100%;
+        background: linear-gradient(to right, #f7b42c 0%, #fc575e 74%);
+        color: $white;
+        height: 5rem;
+        @include align(flex, center, center, null);
+        cursor: pointer;
+        p {
+            font-size: 2rem;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+    }
+}
