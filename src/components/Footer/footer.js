@@ -1,3 +1,5 @@
+import FooterIntro from "./FooterIntro";
+import FooterLinks from "./FooterLinks";
 const Footer = () => {
   const footerStyle = {
     background: "url(/assets/image/footer/footer.jpg)",
@@ -12,8 +14,12 @@ const Footer = () => {
         <div className="container">
           <div className="footer__container__block">
             <div class="row">
-              <div className="col-md-6"></div>
-              <div className="col-md-6"></div>
+              <div className="col-md-6">
+                  <FooterIntro />
+              </div>
+              <div className="col-md-6">
+                  <FooterLinks />
+              </div>
             </div>
           </div>
           <div className="footer__bottom">

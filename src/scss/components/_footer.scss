@@ -1,22 +1,71 @@
-@use "../abstracts" as*;
+@use "../abstracts" as *;
 
 .footer {
     margin-top: 16rem;
     width: 100%;
     padding: 8rem 0;
-    min-height: 60rem;
+    min-height: 70rem;
 
     &__container {
         width: 100%;
 
         &__block {
+            
             background: $white;
             padding: 2rem;
         }
     }
-    
-   
-    
+    &__intro {
+        &__img {
+            width: 15rem;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        &__msg {
+            margin-top: 2rem;
+            font-size: 1.9rem;
+            width: 80%;
+            color: $silverlight;
+            line-height: 2.5rem;
+            font-weight: 400;
+        }
+    }
+    &__heading {
+        color: $orange;
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+    }
+    &__ul {
+        padding: 0;
+        list-style: none;
+        &__li {
+            display: flex;
+            align-items: center;
+            color: $silverlight;
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $silverlight;
+            display: block;
+            padding: 0.5rem 0;
+            font-size: 1.7rem;
+            text-transform: capitalize;
+            margin-left: 0.5rem;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
     &__bottom {
         width: 100%;
         background: linear-gradient(to right, #f7b42c 0%, #fc575e 74%);
