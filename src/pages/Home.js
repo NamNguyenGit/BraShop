@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import BestProducts from "../components/Products/BestProducts";
 import SaleProducts from "../components/Products/SaleProducts";
 import Footer from "../components/Footer/Footer";
+import Services from "../components/Services/Services";
 const Home = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Home = () => {
       <Header />
       <BestProducts />
       <SaleProducts />  
+      <Services />
       <Footer />
       
     </>
