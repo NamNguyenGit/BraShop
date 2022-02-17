@@ -61,7 +61,7 @@ const Register = (props) => {
           }}
         />
       </div>
-      <div className="group">
+      <div className="group model__row" >
         <button type="submit" className="button-dark" value="Register">
           Register
         </button>
