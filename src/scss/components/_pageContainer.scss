@@ -1,119 +1,35 @@
 @use "../abstracts" as *;
-.page {
-    margin: 10rem 0;
-    &__content {
-        width: 100%;
-        @include align(flex, center, center, 0);
-        &__search {
-            background: $blackLight;
-            position: absolute;
-            border-radius: 4rem;
-            padding: 1rem;
 
-            &__searchInput {
-                outline:none;
-                border: none;
-                background: none;
-                color: white;
-                border: none;
-                height: 6rem;
-                width: 50%;
-                font-size: 3rem;
-                padding: 0 ;
-                width: 0;
-                transition: 0.4s;
-                letter-spacing: 0.45rem;
-            }
-            &__searchButton {
-                color: white;
-                float: right;
-                width: 6rem;
-                height: 6rem;
-                border-radius: 50%;
-                background: $blackLight;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: 0.4s;
-            }
-            &:hover > &__searchInput {
-                width: 60rem;
-                padding: 0 0.6rem;
-            }
-            &:hover > &__searchButton {
-                background: white;
-                color : $blackLight;
-              }
-        }
-    }
-    &__heading {
-        margin-top: 5rem;
-        font-size: 5rem;
-        font-weight: 600;
-        position: relative;
-        width: 60%;
-        color: $orange;
-        cursor: pointer;    
-
-        &::after {
-            content: "";
-            position: absolute;
-            background: $black;
-            width: 50%;
-            height: 0.3rem;
-            left: 0;
-            bottom: -0.5rem;
-        }
-    }
-    &__block {
-        margin-top: 5rem;
+.pageContent {
+    margin: 8rem 0;
+    &__image {
         width: 100%;
-    }
-    &__card {
-        width: 100%;
-        height: 35rem;
+        height: auto;
         overflow: hidden;
-        position: relative;
-        border-radius: 1rem;
-        cursor: pointer;
-       
-        &__img {
+        img {
             width: 100%;
             height: 100%;
-            transition: all 0.5s linear;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                cursor: pointer;
-            }
-        }
-
-        &__layer {
-            @include position(absolute, 0, 0, 0, 0, 100%, 100%);
-            @include align(flex, null, flex-end, null);
-            background: linear-gradient(to bottom, transparent 30%, $black);
-            padding: 2rem;
-            color: $white;
-            
-            &__content {
-                @include align(flex, null, center, null);
-                width: 100%;
-                justify-content: space-between;
-
-                &__name {
-                    font-weight: 600;
-                    font-size: 1.7rem;
-                }
-                &__price {
-                    font-weight: 600;
-                    font-size: 1.7rem;
-                }
-            }
-        }
-        &:hover  &__img {
-            transform: scale(1.3);
+            object-fit: cover;
+            image-rendering: pixelated;
         }
     }
-
+    &__info {
+        margin-left: 4rem;
+        &__heading {
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 5rem;
+            color: $black;
+            text-transform: capitalize;
+        }
+        &__msg {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            line-height: 2.6rem;
+            color: $silverlight;
+        }
+        &__link {
+            margin-top: 2rem;
+        }
+    }
 }
