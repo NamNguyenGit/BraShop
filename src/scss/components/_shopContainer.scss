@@ -5,7 +5,7 @@
         width: 100%;
         @include align(flex, center, center, 0);
         &__search {
-            background: $blackLight;
+            background: $orange;
             position: absolute;
             border-radius: 4rem;
             padding: 1rem;
@@ -30,11 +30,12 @@
                 width: 6rem;
                 height: 6rem;
                 border-radius: 50%;
-                background: $blackLight;
+                background: $orange;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 transition: 0.4s;
+                border: none;
             }
             &:hover > &__searchInput {
                 width: 60rem;
