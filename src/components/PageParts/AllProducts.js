@@ -3,7 +3,7 @@ const AllProducts = ({ product }) => {
     return ( 
         <>
         <a href={`/details/${product.id}`} className="col-md-3 p-15 ">
-        <div className="page__card">
+        <div className="page__card animation">
           <div className="page__card__img">
             <LazyLoadImage src={product.image} alt={product.name} />
           </div>

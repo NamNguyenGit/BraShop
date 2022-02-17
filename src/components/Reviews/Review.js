@@ -14,7 +14,7 @@ const Review = () => {
     <>
       <div className="reviews">
         <div className="container">
-          <div className="heading">{state.title}</div>
+          <div className="heading headingAnimation">{state.title}</div>
           <div className="row">
             {review.length > 0
               ? review.map((reviewData) => (

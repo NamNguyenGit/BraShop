@@ -17,12 +17,12 @@ const SaleProducts = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="saleProducts__contents__heading">
+              <div className="saleProducts__contents__heading ">
                 {state.title}
               </div>
             </div>
             <div className="col-md-6">
-              <div className="countdown">
+              <div className="countdown animation">
                 <Countdown />
               </div>
             </div>

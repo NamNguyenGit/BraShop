@@ -3,7 +3,7 @@ const SaleProductsList = ({ saleProducts }) => {
   return (
     <>
       <a href={`/details/${saleProducts.id}`} className="col-md-3 p-15 ">
-        <div className="saleProducts__card">
+        <div className="saleProducts__card animation">
           <div className="saleProducts__card__img">
             <LazyLoadImage src={saleProducts.image} alt={saleProducts.name} />
             <div

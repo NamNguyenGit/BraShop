@@ -1,7 +1,7 @@
 const SearchBar = () => {
   return (
     <>
-      <div className="page__content__search">
+      <div className="page__content__search animation">
         <input
           className="page__content__search__searchInput"
           type="text"

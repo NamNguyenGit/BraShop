@@ -26,11 +26,11 @@ const Header = ({image, heading}) => {
           ></video>
         )}
       </div>
-      <div className="header__contents">
+      <div className="header__contents ">
         <div className="container">
           <div className="header__contents__text">
             <div className="header__contents__text__child">
-              <h1 className="header__contents__text__child__h1">
+              <h1 className="header__contents__text__child__h1 animation">
                {heading}
               </h1>
             </div>

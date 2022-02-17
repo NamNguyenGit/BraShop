@@ -54,25 +54,25 @@ const DetailsProductsRight = ({ product }) => {
 
   return (
     <div className="detailsInfo__right__block">
-      <div className="detailsInfo__right__block__name">{product.name}</div>
-      <div className="detailsInfo__right__block__category">
+      <div className="detailsInfo__right__block__name animation">{product.name}</div>
+      <div className="detailsInfo__right__block__category animation">
         {product.category}
       </div>
-      <div className="detailsInfo__right__block__star">
+      <div className="detailsInfo__right__block__star animation">
         {rating(product.stars)}
       </div>
-      <div className="detailsInfo__right__block__color">
+      <div className="detailsInfo__right__block__color animation">
         <Colors  />
       </div>
       <div className="detailsInfo__right__block__size">Size</div>
-      <div className="detailsInfo__right__block__sizeDetail">
+      <div className="detailsInfo__right__block__sizeDetail animation">
         {product.size}
       </div>
-      <div className="detailsInfo__right__block__cart">
+      <div className="detailsInfo__right__block__cart animation">
         <BsBagCheckFill size={30} />
         <div>Add To  Wishlist</div>
       </div>
-      <div className="detailsInfo__right__block__cart">
+      <div className="detailsInfo__right__block__cart animation">
         <BsFillCartPlusFill size={30} />
         <div>{checkPrice(product.status)}</div>
       </div>

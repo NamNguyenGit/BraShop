@@ -16,7 +16,7 @@ const BestProducts = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div className="bestProducts__heading">{state.title}</div>
+            <div className="bestProducts__heading headingAnimation">{state.title}</div>
           </div>
         </div>
         <div className="bestProducts__blocks">

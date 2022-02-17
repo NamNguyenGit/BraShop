@@ -18,12 +18,12 @@ const PageContainer = ({ data, children }) => {
       <div className="page">
         <div className="container">
           <div className="row">
-            <div className="page__content">{children}</div>
+            <div className="page__content animation">{children}</div>
           </div>
           
           <div className="row">
           <div className="col-md-6">
-            <div className="page__heading">{state.title2}</div>
+            <div className="page__heading headingAnimation">{state.title2}</div>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ const PageContainer = ({ data, children }) => {
           </div>
           <div className="row">
           <div className="col-md-6">
-            <div className="page__heading">{state.title}</div>
+            <div className="page__heading headingAnimation">{state.title}</div>
           </div>
         </div>
 

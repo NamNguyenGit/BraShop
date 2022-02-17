@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const ShowFooterLinks = ({links}) => {
     return links.map((link) => (
         <ul className="footer__ul" key={link.id} > 
-            <li className="footer__ul__li">
+            <li className="footer__ul__li animation">
             <>
             <BsChevronRight size={12} />
             <Link
