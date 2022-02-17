@@ -3,7 +3,6 @@ import Colors from "../Colors/Colors";
 import { BsStarFill, BsStar } from "react-icons/bs";
 const DetailsProductsRight = ({ product }) => {
 
-
   const rating = (number) => {
     let containerStar = [];
     for (let i = 1; i <= 5; i++) {
