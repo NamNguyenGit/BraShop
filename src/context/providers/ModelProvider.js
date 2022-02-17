@@ -4,13 +4,13 @@ import ModelContext from "../ModelContext";
 
 
 const ModelProvider = (props) => {
-  const [state, dispatch] = useReducer(ModelReducer, {
+  const [state, dispatchModel] = useReducer(ModelReducer, {
     modelStatus: false ,
     current: '',
   });
 
   return (
-    <ModelContext.Provider value={{ state, dispatch }}>
+    <ModelContext.Provider value={{ state, dispatchModel }}>
       {props.children}
     </ModelContext.Provider>
   );

@@ -4,7 +4,7 @@ import { OPEN_MODEL } from "../context/types/ModelTypes";
 
 
 const Login = (props) => {
-  const {dispatch} = useContext(ModelContext);
+  const {dispatchModel} = useContext(ModelContext);
     const [state , setState] = useState({
         email:'',
         password:''
@@ -12,6 +12,7 @@ const Login = (props) => {
     const SendLogin = (e) => {
         e.preventDefault();
         console.log(state);
+        
     }
 
 
@@ -52,7 +53,7 @@ const Login = (props) => {
         <button type="submit" className="button-dark" value="Login">
           Login
         </button>
-        <span onClick={() => dispatch({type: OPEN_MODEL, payload: props.currentModel})}> Create new account?</span>
+        <span onClick={() => dispatchModel({type: OPEN_MODEL, payload: props.currentModel})}> Create new account?</span>
       </div>
     </form>
      );

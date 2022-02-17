@@ -8,7 +8,8 @@
 
 
 @use "scss/components/header";
-@use "scss/components/menu";
+
+@use "scss/components/nav";
 @use "scss/components/model";
 @use "scss/components/bestproducts";
 @use "scss/components/detailsproducts";
@@ -20,3 +21,4 @@
 @use "scss/components/services";
 @use "scss/components/shopContainer";
 @use "scss/components/pageContainer";
+@use "scss/components/toggle";

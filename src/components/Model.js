@@ -3,12 +3,12 @@ import ModelContext from "../context/ModelContext";
 import { CLOSE_MODEL } from "../context/types/ModelTypes";
 
 const Model = (props) => {
-  const { state, dispatch } = useContext(ModelContext);
+  const { state, dispatchModel } = useContext(ModelContext);
 
   const close = (e) => {
     const positionClick = e.target.getAttribute('class');
     if(positionClick === 'model' ){
-      dispatch({ type: CLOSE_MODEL })
+      dispatchModel({ type: CLOSE_MODEL })
     }
   }
   return state.modelStatus && state.current === props.current ? (
