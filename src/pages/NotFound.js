@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
-
+import Header from "../components/Header";
+import Footer from "../components/Footer/Footer";
+ 
 const NotFound = () => {
   return (
     <>
@@ -7,7 +9,8 @@ const NotFound = () => {
         <title>Not Found</title>
         <meta name="description" content="bra shop not found " />
       </Helmet>
-      <h1>Not Found</h1>
+      <Header />
+      <Footer />
     </>
   );
 };

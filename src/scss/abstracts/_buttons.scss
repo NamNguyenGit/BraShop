@@ -26,7 +26,10 @@
     
 }
 
-         
+.btn-default {
+    @include button($orange, $orange, $white, 4.5rem, 1.4rem, 0.2rem, 0, 0.2rem);
+}
+    
 
           
        

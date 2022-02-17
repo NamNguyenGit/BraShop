@@ -17,7 +17,7 @@ const SaleProducts = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="saleProducts__contents__heading ">
+              <div className="saleProducts__contents__heading headingAnimation">
                 {state.title}
               </div>
             </div>
