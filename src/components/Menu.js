@@ -39,7 +39,7 @@ const Menu = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/shop">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <Link
