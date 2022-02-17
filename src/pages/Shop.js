@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import { useState } from "react";
-import PageContainer from "../components/PageContainer"
+import PageContainer from "../components/PageParts/PageContainer";
+import SearchBar from "../components/PageParts/SearchBar";
 const Shop = () => {
     const [state] = useState({
-        heading: "our product"
+        heading: "our products"
     })
   return (
     <>
@@ -12,7 +13,9 @@ const Shop = () => {
         <meta name="description" content="etsy , bra , shop page">
         </meta>
       </Helmet>
-      <PageContainer data={state} />
+      <PageContainer data={state} > 
+      <SearchBar />
+      </PageContainer>
     </>
   );
 };

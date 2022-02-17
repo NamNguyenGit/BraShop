@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+.page {
+    margin: 10rem 0;
+    &__content {
+        width: 100%;
+        @include align(flex, center, center, 0);
+        &__search {
+            background: $blackLight;
+            position: absolute;
+            border-radius: 4rem;
+            padding: 1rem;
+
+            &__searchInput {
+                outline:none;
+                border: none;
+                background: none;
+                color: white;
+                border: none;
+                height: 6rem;
+                width: 50%;
+                font-size: 3rem;
+                padding: 0 ;
+                width: 0;
+                transition: 0.4s;
+                letter-spacing: 0.45rem;
+            }
+            &__searchButton {
+                color: white;
+                float: right;
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+                background: $blackLight;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.4s;
+            }
+            &:hover > &__searchInput {
+                width: 60rem;
+                padding: 0 0.6rem;
+            }
+            &:hover > &__searchButton {
+                background: white;
+                color : $blackLight;
+              }
+        }
+    }
+}
