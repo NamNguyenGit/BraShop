@@ -1,11 +1,14 @@
 import { Helmet } from "react-helmet-async";
-
+import { useEffect } from "react";
 import Header from "../components/Header";
 import BestProducts from "../components/Products/BestProducts";
 import SaleProducts from "../components/Products/SaleProducts";
 import Footer from "../components/Footer/Footer";
 import Services from "../components/Services/Services";
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <Helmet>

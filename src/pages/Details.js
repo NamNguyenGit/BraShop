@@ -1,7 +1,6 @@
 import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import BestProductsContext from "../context/BestProductsContext";
-
 import { DETAILS } from "../context/types/BestProductsTypes";
 import Header from "../components/Header";
 import Footer from "../components/Footer/Footer";
@@ -14,7 +13,7 @@ const Details = () => {
   
   useEffect(() => {
     dispatch({ type: DETAILS, payload: id });
-    
+    window.scrollTo(0, 0);
   }, [id]);
 
   return (
