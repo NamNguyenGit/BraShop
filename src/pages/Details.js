@@ -4,6 +4,7 @@ import BestProductsContext from "../context/BestProductsContext";
 
 import { DETAILS } from "../context/types/BestProductsTypes";
 import Header from "../components/Header";
+import Footer from "../components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import DetailsProducts from "../components/Products/DetailsProducts";
 const Details = () => {
@@ -27,6 +28,7 @@ const Details = () => {
       </Helmet>
     <Header heading= {details.name} image={details.banner}></Header>
     <DetailsProducts product={details} />
+    <Footer />
     </>
   );
 };
