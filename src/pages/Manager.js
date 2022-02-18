@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import SideBar from "../components/Admin/SideBar";
 import TopBar from "../components/Admin/TopBar";
+import Homepage from "../components/Admin/pages/Homepage";
 const Manager = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const Manager = () => {
       <TopBar />
       <div className="containerAdmin">
         <SideBar />
-        <div className="others" >other pages</div>
+        <Homepage />
       </div>
     </>
   );

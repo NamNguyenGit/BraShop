@@ -99,13 +99,32 @@
 
 .containerAdmin {
     display: flex;
+    margin-top: 1rem;
 }
 
-.others {
-    flex: 4;
-    background-color: red;
-}
 
 .mr-5 {
     margin-right: 0.5rem;
+}
+
+.featuredIcon {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    color: $red;
+}
+
+.featuredIconUp {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    color: $green;
+}
+
+.recharts-tooltip-label {
+    font-size: 3rem;
+}
+.recharts-tooltip-item-list {
+    font-size: 2rem;
+}
+tspan {
+    font-size: 1.7rem;
 }

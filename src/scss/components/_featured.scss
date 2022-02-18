@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+.featured {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__featuredItem {
+        flex: 1;
+        margin: 0 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 11px -1px #000000;
+        box-shadow: 0px 0px 11px -1px #000000;
+    }
+    &__featuredTitle {
+        font-size: 2rem;
+    }
+    &__featuredMoneyContainer {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        &__featuredMoney {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        &__featuredMoneyRate {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+        }
+    }
+    &__featuredSub {
+        font-size: 1.8rem;
+        color: $silverDark;
+    }
+}
