@@ -14,7 +14,7 @@ const WidgetSm = () => {
         <ul className="widgetSm__list">
           {review.length > 0
             ? review.map((reviewData) => (
-                <li className="widgetSm__list__item">
+                <li className="widgetSm__list__item" key={reviewData.id}>
                   <div className="widgetSm__list__item__image">
                     <LazyLoadImage src={reviewData.image} />
                   </div>

@@ -22,7 +22,7 @@ const WidgetLg = () => {
           </tr>
           {review.length > 0
             ? review.map((reviewData) => (
-                <tr className="widgetLg__table__tr">
+                <tr className="widgetLg__table__tr" key={reviewData.id}>
                   <td className="widgetLg__table__td">
                     <div className="widgetLg__table__td__image">
                       <LazyLoadImage src={reviewData.image} />

@@ -12,7 +12,7 @@ const SideBar = () => {
                 <div className="sideBar__menu__title">
                     Dashboard
                     <ul className="sideBar__menu__list">
-                        <li className="sideBar__menu__list__item  ">
+                        <li className="sideBar__menu__list__item active ">
                             <MdLineStyle size={25} className="mr-5"/>
                             Home
                         </li>
