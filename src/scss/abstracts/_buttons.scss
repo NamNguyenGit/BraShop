@@ -7,30 +7,32 @@
 }
 
 .button-black {
-    @include button(#FCD299, $white , $orange, 3rem, 1.8rem, 0.4rem, 0, 0.2rem);
+    @include button(#fcd299, $white, $orange, 3rem, 1.8rem, 0.4rem, 0, 0.2rem);
     text-transform: capitalize !important;
     font-weight: 700 !important;
     transition: 0.5s;
-    background-size: 200% auto;           
-  
+    background-size: 200% auto;
+
     &:hover {
         background-position: right center; /* change the direction of the change here */
         color: $black;
         text-decoration: none;
-      }
+    }
 }
 
 .btn-dark {
     @include button($orange, $orange, $white, 4.5rem, 1.4rem, 0.4rem, 0, 0.2rem);
     letter-spacing: 0.1rem;
-    
 }
 
 .btn-default {
     @include button($orange, $orange, $white, 4.5rem, 1.4rem, 0.2rem, 0, 0.2rem);
 }
-    
 
-          
-       
-        
+.widgetSm__btn {
+    display: flex !important;
+    align-items: center;
+    @include button(#eeeef7, #eeeef7, $black, 5rem, 2rem, 1rem, 0.7rem, 1rem);
+    background: #eeeef7;
+    cursor: pointer;
+}

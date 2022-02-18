@@ -2,6 +2,7 @@ const reviews = [
 	{
 		id: 1,
 		name: 'ali',
+		job:'Doctor',
 		comment:
 			"That's great travel agency so far I see with great team and user friendly",
 		stars: 4,
@@ -10,6 +11,7 @@ const reviews = [
 	{
 		id: 2,
 		name: 'alex',
+		job:'Teacher',
 		comment:
 			'I suggest travel friends to everyone because I love travel friends',
 		stars: 5,
@@ -18,6 +20,7 @@ const reviews = [
 	{
 		id: 3,
 		name: 'andrison',
+		job:'Student',
 		comment: 'One my favorite travel website',
 		stars: 3,
 		image: '/assets/reviewUsers/user3.jpg',
@@ -25,6 +28,7 @@ const reviews = [
 	{
 		id: 4,
 		name: 'brad hussy',
+		job:'business',
 		comment: 'I love the hotels which are associated with travel friends.',
 		stars: 5,
 		image: '/assets/reviewUsers/user4.jpg',
@@ -32,6 +36,7 @@ const reviews = [
 	{
 		id: 5,
 		name: 'rahul gandi',
+		job:'Nurse',
 		comment:
 			'Me and my wife both are big fans of the travel friends website because they have everything that you want, 5-star rooms, friendly tour guides, cheap packages, and special discounts for couples, my final words must do one tour with travel friends after you also love travel friends.',
 		stars: 5,
@@ -40,6 +45,7 @@ const reviews = [
 	{
 		id: 6,
 		name: 'shakil khan',
+		job:'Police',
 		comment:
 			"I love the facilities especially when I reached to USA, travel friend's car was present there for me.",
 		stars: 2,
@@ -48,6 +54,7 @@ const reviews = [
 	{
 		id: 7,
 		name: 'newton roy',
+		job:'Principle',
 		comment: 'Thank you travel friends for the great adventure.',
 		stars: 5,
 		image: '/assets/reviewUsers/user7.jpg',
@@ -55,6 +62,7 @@ const reviews = [
 	{
 		id: 8,
 		name: 'alex jobs',
+		job:'chef',
 		comment:
 			'I did travel with some other agencies as well but travel friends is more professional than others.',
 		stars: 5,
@@ -63,6 +71,7 @@ const reviews = [
 	{
 		id: 9,
 		name: 'sikandar khan',
+		job:'developer',
 		comment: '100% recommended to everyone',
 		stars: 5,
 		image: '/assets/reviewUsers/user9.jpg',
