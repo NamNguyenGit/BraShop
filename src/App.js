@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
 import Manager from "./pages/Manager";
 import Toggle from "./components/Toogle";
+
 function App() {
   return (
     <Router>
@@ -28,22 +29,23 @@ function App() {
                 <ColorsProvider>
                   <ServicesProvider>
                     <AnimationProvider>
-                    
                       <Toggle />
                       <Nav />
                       <HelmetProvider>
+                      
                         <Switch>
                           <Route path="/" exact component={Home} />
                           <Route path="/about" exact component={About} />
-                          <Route path="/manager" exact component={Manager} />
+                          <Route path="/manager"  component={Manager} />
                           <Route path="/shop" exact component={Shop} />
                           <Route path="/contact" exact component={Contact} />
+                         
                           <Route
                             path="/details/:id"
                             exact
                             component={Details}
                           />
-                          <Route component={NotFound} exact />
+                          <Route component={NotFound}  />
                         </Switch>
                       </HelmetProvider>
                     </AnimationProvider>

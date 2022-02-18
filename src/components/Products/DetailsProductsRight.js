@@ -2,17 +2,16 @@ import { BsFillCartPlusFill, BsBagCheckFill } from "react-icons/bs";
 import Colors from "../Colors/Colors";
 import { BsStarFill, BsStar } from "react-icons/bs";
 const DetailsProductsRight = ({ product }) => {
-
   const rating = (number) => {
     let containerStar = [];
     for (let i = 1; i <= 5; i++) {
-      if(i <= number) {
+      if (i <= number) {
         containerStar.push(
           <BsStarFill
-          key={i}
-          size={15}
-          color="df2189"
-          className="detailsInfo__review"
+            key={i}
+            size={15}
+            color="df2189"
+            className="detailsInfo__review"
           />
         );
       } else {
@@ -23,38 +22,38 @@ const DetailsProductsRight = ({ product }) => {
             color="df2189"
             className="detailsInfo__review"
           />
-        )
+        );
       }
     }
     return containerStar;
-  }
+  };
 
   const checkPrice = (status) => {
-    let container = [];
     if (status === "Sale") {
-      container.push(
+      return (
         <div key={product.id}>
           <span>$</span>
           {product.sale_price}
         </div>
       );
-    } else if (status === "Sold out") {
-      container.push(<div key={product.id}>Sorry we are out of stock. </div>);
-    } else {
-      container.push(
-        <div key={product.id}>
-          <span>$</span>
-          {product.price}
-        </div>
-      );
+    }
+    if (status === "Sold out") {
+      return <div key={product.id}>Sorry we are out of stock. </div>;
     }
 
-    return container;
+    return (
+      <div key={product.id}>
+        <span>$</span>
+        {product.price}
+      </div>
+    );
   };
 
   return (
     <div className="detailsInfo__right__block">
-      <div className="detailsInfo__right__block__name animation">{product.name}</div>
+      <div className="detailsInfo__right__block__name animation">
+        {product.name}
+      </div>
       <div className="detailsInfo__right__block__category animation">
         {product.category}
       </div>
@@ -62,7 +61,7 @@ const DetailsProductsRight = ({ product }) => {
         {rating(product.stars)}
       </div>
       <div className="detailsInfo__right__block__color animation">
-        <Colors  />
+        <Colors />
       </div>
       <div className="detailsInfo__right__block__size">Size</div>
       <div className="detailsInfo__right__block__sizeDetail animation">
@@ -70,7 +69,7 @@ const DetailsProductsRight = ({ product }) => {
       </div>
       <div className="detailsInfo__right__block__cart animation">
         <BsBagCheckFill size={30} />
-        <div>Add To  Wishlist</div>
+        <div>Add To Wishlist</div>
       </div>
       <div className="detailsInfo__right__block__cart animation">
         <BsFillCartPlusFill size={30} />

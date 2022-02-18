@@ -26,7 +26,7 @@ const TopBar = () => {
               <span className="topBar__right__icons__bag">2</span>
             </div>
             <div className="topBar__right__image">
-              <LazyLoadImage src={state.image} alt={state.image} />
+              <LazyLoadImage src={state.image}  />
             </div>
           </div>
         </div>
