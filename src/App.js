@@ -14,7 +14,6 @@ import Shop from "./pages/Shop";
 import NotFound from "./pages/NotFound";
 import Details from "./pages/Details";
 import Contact from "./pages/Contact";
-
 import Nav from "./components/Nav";
 import Manager from "./pages/Manager";
 import Toggle from "./components/Toogle";
