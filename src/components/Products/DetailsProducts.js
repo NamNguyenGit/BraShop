@@ -4,19 +4,17 @@ import { useContext } from "react";
 import BestProductsContext from "../../context/BestProductsContext";
 import LightBox from "./LightBox";
 import Review from "../Reviews/Review";
+import RelatedProducts from "./RelatedProducts";
 
 const DetailsProducts = ({ product }) => {
   const {
-    BestProductsData: {  lightBoxStatus },
+    BestProductsData: { lightBoxStatus },
   } = useContext(BestProductsContext);
-  
-
 
   return (
-
     <>
-      {lightBoxStatus ? <LightBox /> : ''}
-      
+      {lightBoxStatus ? <LightBox /> : ""}
+
       <div className="detailsInfo">
         <div className="container">
           <h2 className="heading headingAnimation">Overview</h2>
@@ -47,11 +45,8 @@ const DetailsProducts = ({ product }) => {
           </div>
         </div>
       </div>
-      
-        <Review />
-      
-    
-
+      <RelatedProducts />
+      <Review />
     </>
   );
 };
