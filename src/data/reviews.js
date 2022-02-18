@@ -6,6 +6,9 @@ const reviews = [
 		comment:
 			"That's great travel agency so far I see with great team and user friendly",
 		stars: 4,
+		date:'2 Aug 2022',
+		amount: '$500',
+		status: 'Approved',
 		image: '/assets/reviewUsers/user1.jpg',
 	},
 	{
@@ -15,6 +18,9 @@ const reviews = [
 		comment:
 			'I suggest travel friends to everyone because I love travel friends',
 		stars: 5,
+		date:'2 Aug 2022',
+		amount: '$700',
+		status: 'Declined',
 		image: '/assets/reviewUsers/user2.jpg',
 	},
 	{
@@ -23,6 +29,9 @@ const reviews = [
 		job:'Student',
 		comment: 'One my favorite travel website',
 		stars: 3,
+		date:'2 Aug 2022',
+		amount: '$900',
+		status: 'Declined',
 		image: '/assets/reviewUsers/user3.jpg',
 	},
 	{
@@ -31,6 +40,9 @@ const reviews = [
 		job:'business',
 		comment: 'I love the hotels which are associated with travel friends.',
 		stars: 5,
+		date:'2 Aug 2022',
+		amount: '$1500',
+		status: 'Approved',
 		image: '/assets/reviewUsers/user4.jpg',
 	},
 	{
@@ -40,6 +52,9 @@ const reviews = [
 		comment:
 			'Me and my wife both are big fans of the travel friends website because they have everything that you want, 5-star rooms, friendly tour guides, cheap packages, and special discounts for couples, my final words must do one tour with travel friends after you also love travel friends.',
 		stars: 5,
+		date:'2 Aug 2022',
+		amount: '$2000',
+		status: 'Pending',
 		image: '/assets/reviewUsers/user6.jpg',
 	},
 	{
@@ -49,6 +64,9 @@ const reviews = [
 		comment:
 			"I love the facilities especially when I reached to USA, travel friend's car was present there for me.",
 		stars: 2,
+		date:'2 Aug 2022',
+		amount: '$3500',
+		status: 'Pending',
 		image: '/assets/reviewUsers/user5.jpg',
 	},
 	{
@@ -57,6 +75,9 @@ const reviews = [
 		job:'Principle',
 		comment: 'Thank you travel friends for the great adventure.',
 		stars: 5,
+		date:'2 Aug 2022',
+		amount: '$300',
+		status: 'Approved',
 		image: '/assets/reviewUsers/user7.jpg',
 	},
 	{
@@ -66,6 +87,9 @@ const reviews = [
 		comment:
 			'I did travel with some other agencies as well but travel friends is more professional than others.',
 		stars: 5,
+		date:'2 Aug 2022',
+		amount: '$600',
+		status: 'Approved',
 		image: '/assets/reviewUsers/user8.jpg',
 	},
 	{
@@ -74,6 +98,9 @@ const reviews = [
 		job:'developer',
 		comment: '100% recommended to everyone',
 		stars: 5,
+		date:'2 Aug 2022',
+		amount: '$500',
+		status: 'Pending',
 		image: '/assets/reviewUsers/user9.jpg',
 	},
 ];

@@ -36,3 +36,25 @@
     background: #eeeef7;
     cursor: pointer;
 }
+
+.widgetLg__btn {
+    font-size:2rem;
+    height: 5rem;
+    width: 10rem;
+    padding: 0.5 0.7rem;
+    border: none;
+    border-radius: 1rem;
+    &.Approved {
+        background-color: #e5faf2;
+        color: $green;
+    }
+    &.Declined {
+        background-color: #fff0f1;
+        color: $red;
+    }
+    &.Pending {
+        background-color: #ebf1fe;
+        color: $lightblue;
+    }
+}
+
