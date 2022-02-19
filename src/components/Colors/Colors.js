@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ColorsContext from "../../context/ColorsContext";
-import { BsStarFill, BsStar } from "react-icons/bs";
+
 import ColorList from "./ColorList";
 
 const Colors = () => {

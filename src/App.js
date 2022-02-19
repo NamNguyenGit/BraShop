@@ -7,10 +7,10 @@ import ColorsProvider from "./context/providers/ColorsProvider";
 import AnimationProvider from "./context/providers/AnimationProvider";
 import ServicesProvider from "./context/providers/ServicesProvider";
 import NavProvider from "./context/providers/NavProvider";
-
 import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Account from "./pages/Account";
 import Shop from "./pages/Shop";
 import NotFound from "./pages/NotFound";
 import Details from "./pages/Details";
@@ -39,7 +39,7 @@ function App() {
                           <Route path="/manager" component={Manager} />
                           <Route path="/shop" exact component={Shop} />
                           <Route path="/contact" exact component={Contact} />
-
+                          <Route path="/account" component={Account} />
                           <Route
                             path="/details/:id"
                             exact

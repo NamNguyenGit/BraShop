@@ -1,0 +1,60 @@
+@use "../abstracts" as *;
+
+.Account {
+    &__topBar {
+        width: 100%;
+        height: 5rem;
+        background: $white;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        margin-bottom: 4rem;
+    
+        &__wrapper {
+            padding: 0 20rem 0 2rem;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__left {
+            &__logo {
+                font-weight: bold;
+                font-size: 3rem;
+                color: $orange;
+                cursor: pointer;
+            }
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+           
+            &__icons {
+                position: relative;
+                cursor: pointer;
+                margin-right: 1rem;
+                &__bag {
+                    @include align(flex, center, center, 1.5rem);
+                    @include position(absolute, -0.5rem, null, null, 0.5rem, 1.5rem, 1.5rem);
+                    background-color: $red;
+                    color: $white;
+                    border-radius: 50%;
+                    font-size: 1.5rem;
+                }
+            }
+            &__image {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                overflow: hidden;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+

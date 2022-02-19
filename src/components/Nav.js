@@ -47,6 +47,9 @@ const Nav = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
+            <Link to="/account">Account</Link>
+          </li>
+          <li>
             <Link  to={{}}
             onClick={() =>
               dispatchModel({ type: OPEN_MODEL, payload: registerModel })
