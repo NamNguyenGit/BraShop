@@ -1,15 +1,19 @@
 import DetailsProductImage from "./DetailsProductImage";
 import DetailsProductsRight from "./DetailsProductsRight";
-import { useContext } from "react";
+import { useContext,useState } from "react";
 import BestProductsContext from "../../context/BestProductsContext";
 import LightBox from "./LightBox";
 import Review from "../Reviews/Review";
 import RelatedProducts from "./RelatedProducts";
 
 const DetailsProducts = ({ product }) => {
+  const [state] = useState({
+    title: "Maybe You Like",
+  });
   const {
-    BestProductsData: { lightBoxStatus },
+    BestProductsData: { lightBoxStatus,relatedProducts },
   } = useContext(BestProductsContext);
+  
 
   return (
     <>
@@ -45,8 +49,24 @@ const DetailsProducts = ({ product }) => {
           </div>
         </div>
       </div>
-      <RelatedProducts />
+      
       <Review />
+      <div className="container">
+        <div className="row">
+        <div className="col-md-6">
+            <div className="bestProducts__heading headingAnimation">{state.title}</div>
+          </div>
+        </div>
+        <div className="row mt-5">
+        {relatedProducts.map((relatedProduct) => (
+                <RelatedProducts
+                  relatedProducts={relatedProduct}
+                  key={relatedProduct.id}
+                />
+        ))}
+        </div>
+      </div>
+      
     </>
   );
 };
