@@ -18,7 +18,7 @@ const Services = () => {
       <div className="services__contents">
         <div className="container">
           <div className="row services__contents__container">
-            <div className="col-md-6">
+            <div className="col-md-6 responsiveClass">
               <ServiceLeft
                 heading={state.heading}
                 subHeading={state.subHeading}

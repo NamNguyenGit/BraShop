@@ -10,7 +10,15 @@
         width: 60%;
         color: $orange;
         cursor: pointer;    
-
+        @include responsive(medium) {
+            font-size: 4rem; 
+        }
+        @include responsive(small) {
+            font-size: 3.5rem; 
+        }
+        @include responsive(xsmall) {
+            font-size: 3rem; 
+        }
         &::after {
             content: "";
             position: absolute;
