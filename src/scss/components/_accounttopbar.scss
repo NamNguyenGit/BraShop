@@ -27,7 +27,12 @@
     &__right {
         display: flex;
         align-items: center;
-
+        a {
+            color: $black;
+            &:hover {
+                color: $orange;
+            }
+        }
         &__icons {
             position: relative;
             cursor: pointer;

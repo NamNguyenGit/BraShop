@@ -1,5 +1,6 @@
 import { MdOutlineLanguage } from "react-icons/md";
 import { SiGoogleanalytics } from "react-icons/si";
+import { HiShoppingCart } from "react-icons/hi";
 import {GiShoppingBag} from "react-icons/gi";
 import { FaHistory } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
@@ -37,6 +38,12 @@ const SideBar = () => {
                 <li className="Account__sideBar__menu__list__item">
                   <GiShoppingBag size={25} className="mr-5" />
                   WishList
+                </li>
+                </Link>
+                <Link style={{ textDecoration: "none" }} to="/account/cart">
+                <li className="Account__sideBar__menu__list__item">
+                  <HiShoppingCart size={25} className="mr-5" />
+                  Cart
                 </li>
                 </Link>
                 <li className="Account__sideBar__menu__list__item">

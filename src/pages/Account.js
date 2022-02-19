@@ -7,6 +7,7 @@ import Profile from "../components/Account/Profile";
 import Address from "../components/Account/Address";
 import OrderHistory from "../components/Account/OrderHistory";
 import WishList from "../components/Account/WishList";
+import Cart from "../components/Account/Cart";
 const Account = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,6 +35,9 @@ const Account = () => {
           </Route>
           <Route exact path="/account/wishList">
             <WishList />
+          </Route>
+          <Route exact path="/account/cart">
+            <Cart />
           </Route>
           
         </Switch>

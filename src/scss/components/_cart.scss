@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.cart {
+    flex: 6;
+    &__heading{
+        color: $black;
+        text-transform: capitalize;
+    }
+}
