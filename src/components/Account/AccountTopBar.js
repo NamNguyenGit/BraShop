@@ -9,7 +9,7 @@ const AccountTopBar = () => {
   });
   return (
     <>
-      <div className="Account">
+     
         <div className="Account__topBar">
           <div className="Account__topBar__wrapper">
             <div className="Account__topBar__left">
@@ -32,7 +32,7 @@ const AccountTopBar = () => {
             </div>
           </div>
         </div>
-      </div>
+     
     </>
   );
 };

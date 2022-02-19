@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import AccountTopBar from "../components/Account/AccountTopBar";
+import AccountSideBar from "../components/Account/AccountSideBar";
 const Account = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-  
+
   return (
     <>
       <Helmet>
@@ -14,7 +15,65 @@ const Account = () => {
       </Helmet>
 
       <AccountTopBar />
-      
+      <div className="containerAccount">
+        <AccountSideBar />
+      </div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+       <div>a</div>
+       <div>a</div> <div>a</div> <div>a</div> <div>a</div>
+       <div>a</div>
+
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+       <div>a</div>
+        <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div> <div>a</div> <div>a</div> <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div>
+         <div>a</div> <div>a</div>
+         <div>a</div>
+          <div>a</div>
+           <div>a</div>
+           <div>a</div>
+           <div>a</div>
+           <div>a</div>
+           <div>a</div>
+           <div>a</div>
+           <div>a</div>
+           <div>a</div>
+           <div>a</div>
+            <div>a</div>
     </>
   );
 };
