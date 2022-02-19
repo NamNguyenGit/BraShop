@@ -2,6 +2,11 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import AccountTopBar from "../components/Account/AccountTopBar";
 import AccountSideBar from "../components/Account/AccountSideBar";
+import { BrowserRouter as Route, Switch } from "react-router-dom";
+import Profile from "../components/Account/Profile";
+import Address from "../components/Account/Address";
+import OrderHistory from "../components/Account/OrderHistory";
+import WishList from "../components/Account/WishList";
 const Account = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -17,63 +22,23 @@ const Account = () => {
       <AccountTopBar />
       <div className="containerAccount">
         <AccountSideBar />
+        <Switch>
+          <Route exact path="/account">
+            <Profile />
+          </Route>
+          <Route exact path="/account/address">
+            <Address />
+          </Route>
+          <Route exact path="/account/orderHistory">
+            <OrderHistory />
+          </Route>
+          <Route exact path="/account/wishList">
+            <WishList />
+          </Route>
+          
+        </Switch>
       </div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
-       <div>a</div>
-       <div>a</div> <div>a</div> <div>a</div> <div>a</div>
-       <div>a</div>
-
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-       <div>a</div>
-        <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div> <div>a</div> <div>a</div> <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div>
-         <div>a</div> <div>a</div>
-         <div>a</div>
-          <div>a</div>
-           <div>a</div>
-           <div>a</div>
-           <div>a</div>
-           <div>a</div>
-           <div>a</div>
-           <div>a</div>
-           <div>a</div>
-           <div>a</div>
-           <div>a</div>
-            <div>a</div>
+     
     </>
   );
 };

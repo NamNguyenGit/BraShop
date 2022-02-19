@@ -8,7 +8,6 @@
 
 
 @use "scss/components/header";
-
 @use "scss/components/nav";
 @use "scss/components/model";
 @use "scss/components/bestproducts";
@@ -31,3 +30,7 @@
 @use "scss/components/widgetlg";
 @use "scss/components/accounttopbar";
 @use "scss/components/accountsidebar";
+@use "scss/components/profile";
+@use "scss/components/address";
+@use "scss/components/orderhistory";
+@use "scss/components/wishlist";
